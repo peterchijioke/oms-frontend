@@ -2,7 +2,8 @@ import React from "react";
 import styles from "./style.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import ImageProfile from "../../../public/asset/images/download.png";
+import ImageProfile from "../../../public/asset/images/download.jpg";
+import { MdiSignOut } from "@/app/icons/MdiSignOut";
 
 type Props = {};
 
@@ -31,7 +32,10 @@ export default function DashboardNav({}: Props) {
               src={ImageProfile}
             />
             <ul className={`cursor-pointer flex  ${styles.nav_button}`}>
-              <li>Log-out</li>
+              <div className="flex items-center flex-row gap-1">
+                <MdiSignOut />
+                <li>Log-out</li>
+              </div>
             </ul>
           </div>
         </div>
