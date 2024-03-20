@@ -16,7 +16,7 @@ export default function DashboardNav({}: Props) {
           className={`w-1/5 h-full  flex flex-col justify-center cursor-pointer ${styles.logo}`}
         >
           <label className={`font-bold text-xl cursor-pointer ${styles.text}`}>
-            OZORI
+            THE ORPHANS
           </label>
           <label className={`text-xs flex cursor-pointer ${styles.text}`}>
             Redefining how you see the homeless

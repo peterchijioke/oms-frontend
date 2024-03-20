@@ -5,5 +5,5 @@ type Props = {
 };
 
 export default function Container({ ...props }: Props) {
-  return <div className="px-24" {...props} />;
+  return <div className="pb-8 px-5 lg:px-24 pt-8" {...props} />;
 }
