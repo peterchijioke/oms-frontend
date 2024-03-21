@@ -23,7 +23,7 @@ export default function FooterSection({}: Props) {
 
 const SocialIcon = ({ icon }: any) => (
   <div
-    className={`w-12 cursor-pointer h-12 bg-white rounded-full flex items-center justify-center ${styles.socialIcon}`}
+    className={`w-12 cursor-pointer h-12 bg-white rounded-full flex items-center justify-center transform transition duration-500 hover:scale-110`}
   >
     {icon}
   </div>

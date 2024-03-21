@@ -5,7 +5,7 @@ export function Fa6SolidChildren(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="1.25em"
+      width="1em"
       height="1em"
       viewBox="0 0 640 512"
       {...props}

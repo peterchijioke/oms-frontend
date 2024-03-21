@@ -28,7 +28,7 @@ export default function AppLandingHeader({}: Props) {
       <div className="h-full  hidden lg:flex justify-between gap-2">
         <Link
           href="/"
-          className={`w-1/5 h-full  flex flex-col justify-center cursor-pointer ${styles.logo}`}
+          className={`w-1/5 h-full  flex flex-col justify-center cursor-pointer transform transition duration-500 hover:scale-110`}
         >
           <label
             className={`font-bold text-l cursor-pointer ${styles.text} uppercase`}
