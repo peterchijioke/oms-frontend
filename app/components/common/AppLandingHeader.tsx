@@ -30,8 +30,10 @@ export default function AppLandingHeader({}: Props) {
           href="/"
           className={`w-1/5 h-full  flex flex-col justify-center cursor-pointer ${styles.logo}`}
         >
-          <label className={`font-bold text-xl cursor-pointer ${styles.text}`}>
-            THE ORPHANS
+          <label
+            className={`font-bold text-l cursor-pointer ${styles.text} uppercase`}
+          >
+            Orphanage Care Platform
           </label>
           <label className={`text-xs flex cursor-pointer ${styles.text}`}>
             Redefining how you see the homeless
@@ -75,26 +77,11 @@ export default function AppLandingHeader({}: Props) {
                 <li>Contact</li>
               </div>
             </Link>
-            <div className={`cursor-pointer flex  ${styles.nav_button}`}>
-              <Link href="/signup" className="flex items-center flex-row gap-1">
-                <MdiRegister />
-                <li>Sign-up</li>
-              </Link>
-            </div>
-            <div className={`cursor-pointer flex  ${styles.nav_button}`}>
-              <Link href="/login">
-                <div className="flex items-center flex-row gap-1">
-                  <Tabs icon={<MdiLightLogin />} title="Login" />
-                </div>
-              </Link>
-            </div>
+            <Tabs href="/signup" icon={<MdiRegister />} title="Sign-up" />
+            <Tabs href="/login" icon={<MdiLightLogin />} title="login" />
           </div>
         </div>
       </div>
     </div>
   );
 }
-
-const styless = {
-  font: { fontFamily: "Jost" },
-};

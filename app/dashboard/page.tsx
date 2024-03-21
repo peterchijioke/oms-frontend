@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import Container from "../layout/Container";
 import DashboardNav from "../components/common/DashboardNav";
+import MainBody from "./MainBody";
+import SidebarSection from "./SideBarSection";
 
 type Props = {
   children: React.ReactNode;
@@ -8,9 +10,12 @@ type Props = {
 
 export default function page({ children }: Props) {
   return (
-    <section className="flex min-h-screen flex-col items-center justify-between ">
+    <section className="flex w-full min-h-screen flex-row ">
       <DashboardNav />
-      <Container>{children}</Container>
+      <SidebarSection />
+      <MainBody>
+        <Container>{children}</Container>
+      </MainBody>
     </section>
   );
 }

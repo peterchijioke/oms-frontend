@@ -4,21 +4,26 @@ import Link from "next/link";
 import Image from "next/image";
 import ImageProfile from "../../../public/asset/images/download.jpg";
 import { MdiSignOut } from "@/app/icons/MdiSignOut";
+import Tabs from "./Tabs";
 
 type Props = {};
 
 export default function DashboardNav({}: Props) {
   return (
-    <div className="w-full h-16 bg-white  shadow fixed px-24">
-      <div className="h-full  hidden lg:flex justify-between gap-2">
+    <div className="w-full h-16 bg-white fixed px-24">
+      <div className="h-full hidden lg:flex justify-between gap-2">
         <Link
           href={"/"}
           className={`w-1/5 h-full  flex flex-col justify-center cursor-pointer ${styles.logo}`}
         >
-          <label className={`font-bold text-xl cursor-pointer ${styles.text}`}>
-            THE ORPHANS
+          <label
+            className={`font-bold lg:text-l cursor-pointer ${styles.text} uppercase`}
+          >
+            Orphanage Care Platform
           </label>
-          <label className={`text-xs flex cursor-pointer ${styles.text}`}>
+          <label
+            className={`text-xs lg:flex hidden cursor-pointer ${styles.text}`}
+          >
             Redefining how you see the homeless
           </label>
         </Link>
@@ -31,12 +36,8 @@ export default function DashboardNav({}: Props) {
               className={`w-10 h-10 rounded-full ${styles.avatar} `}
               src={ImageProfile}
             />
-            <ul className={`cursor-pointer flex  ${styles.nav_button}`}>
-              <div className="flex items-center flex-row gap-1">
-                <MdiSignOut />
-                <li>Log-out</li>
-              </div>
-            </ul>
+
+            <Tabs title="Log-out" href="/" icon={<MdiSignOut />} />
           </div>
         </div>
       </div>
