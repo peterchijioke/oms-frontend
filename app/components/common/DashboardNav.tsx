@@ -5,6 +5,7 @@ import Image from "next/image";
 import ImageProfile from "../../../public/asset/images/download.jpg";
 import { MdiSignOut } from "@/app/icons/MdiSignOut";
 import Tabs from "./Tabs";
+import LogoTab from "./LogoTab";
 
 type Props = {};
 
@@ -12,21 +13,7 @@ export default function DashboardNav({}: Props) {
   return (
     <div className="w-full h-16 bg-white fixed px-24 pl-48 pr-24">
       <div className="h-full hidden lg:flex justify-between gap-2">
-        <Link
-          href={"/"}
-          className={`w-1/5 h-full  flex flex-col justify-center cursor-pointer ${styles.logo}`}
-        >
-          <label
-            className={`font-bold lg:text-l cursor-pointer ${styles.text} uppercase`}
-          >
-            Orphanage Care Platform
-          </label>
-          <label
-            className={`text-xs lg:flex hidden cursor-pointer ${styles.text}`}
-          >
-            Redefining how you see the homeless
-          </label>
-        </Link>
+        <LogoTab />
         <div className="w-4/5 h-full  flex justify-end ">
           <div className="flex h-full w-1/2 flex-row  pl-5 items-center justify-end gap-6">
             <Image

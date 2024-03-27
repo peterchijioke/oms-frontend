@@ -9,6 +9,8 @@ import Tabs from "./Tabs";
 import { MdiAbout } from "@/app/icons/MdiAbout";
 import { Fa6SolidChildren } from "@/app/icons/Fa6SolidChildren";
 import { MaterialSymbolsLightContactPage } from "@/app/icons/MaterialSymbolsLightContactPage";
+import { MdiSignOut } from "@/app/icons/MdiSignOut";
+import LogoTab from "./LogoTab";
 
 type Props = {};
 
@@ -26,19 +28,7 @@ export default function AppLandingHeader({}: Props) {
       </div>
 
       <div className="h-full  hidden lg:flex justify-between gap-2">
-        <Link
-          href="/"
-          className={`w-1/5 h-full  flex flex-col justify-center cursor-pointer transform transition duration-500 hover:scale-110`}
-        >
-          <label
-            className={`font-bold text-l cursor-pointer ${styles.text} uppercase`}
-          >
-            Orphanage Care Platform
-          </label>
-          <label className={`text-xs flex cursor-pointer ${styles.text}`}>
-            Redefining how you see the homeless
-          </label>
-        </Link>
+        <LogoTab />
         <div className="w-4/5 h-full   flex justify-end ">
           <div className="flex h-full  flex-row  pl-5 items-center justify-end gap-7">
             <Link
@@ -51,7 +41,7 @@ export default function AppLandingHeader({}: Props) {
               </div>
             </Link>
             <Link
-              href="/dashboard"
+              href="/dashboard/home"
               className={`cursor-pointer flex  ${styles.nav_button}`}
             >
               <div className="flex items-center flex-row gap-1">
@@ -79,6 +69,7 @@ export default function AppLandingHeader({}: Props) {
             </Link>
             <Tabs href="/signup" icon={<MdiRegister />} title="Sign-up" />
             <Tabs href="/login" icon={<MdiLightLogin />} title="login" />
+            <Tabs title="Log-out" href="/" icon={<MdiSignOut />} />
           </div>
         </div>
       </div>
