@@ -32,7 +32,7 @@ export default function AppLandingHeader({}: Props) {
         <div className="w-4/5 h-full   flex justify-end ">
           <div className="flex h-full  flex-row  pl-5 items-center justify-end gap-7">
             <Link
-              href="/dashboard"
+              href="#"
               className={`cursor-pointer flex  ${styles.nav_button}`}
             >
               <div className="flex items-center flex-row gap-1">
@@ -41,7 +41,7 @@ export default function AppLandingHeader({}: Props) {
               </div>
             </Link>
             <Link
-              href="/dashboard/home"
+              href="#"
               className={`cursor-pointer flex  ${styles.nav_button}`}
             >
               <div className="flex items-center flex-row gap-1">
@@ -50,7 +50,7 @@ export default function AppLandingHeader({}: Props) {
               </div>
             </Link>
             <Link
-              href="/dashboard"
+              href="#"
               className={`cursor-pointer flex  ${styles.nav_button}`}
             >
               <div className="flex items-center flex-row gap-1">
@@ -59,7 +59,7 @@ export default function AppLandingHeader({}: Props) {
               </div>
             </Link>
             <Link
-              href="/dashboard"
+              href="#"
               className={`cursor-pointer flex  ${styles.nav_button}`}
             >
               <div className="flex items-center flex-row gap-1">

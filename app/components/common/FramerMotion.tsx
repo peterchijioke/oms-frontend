@@ -53,6 +53,7 @@ export const ListAnimation = ({
 export const TableRowAnimation = ({
   children,
   index,
+  ...props
 }: {
   children: React.ReactNode;
   index: number;
@@ -62,6 +63,7 @@ export const TableRowAnimation = ({
       initial={{ y: 50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeInOut", delay: index * 0.1 }}
+      {...props}
     >
       {children}
     </motion.tr>

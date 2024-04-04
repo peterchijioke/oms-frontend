@@ -11,7 +11,7 @@ export default function LogoTab({}: Props) {
   return (
     <Link
       href={"/"}
-      className={`w-1/5 h-full  flex flex-col justify-center cursor-pointer ${styles.logo}`}
+      className={` h-full w-2/5  flex flex-col justify-center cursor-pointer ${styles.logo}`}
     >
       <label
         className={`font-bold lg:text-l cursor-pointer ${styles.text} uppercase`}

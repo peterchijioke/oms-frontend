@@ -11,7 +11,7 @@ type Props = {};
 
 export default function DashboardNav({}: Props) {
   return (
-    <div className="w-full h-16 bg-white fixed px-24 pl-48 pr-24">
+    <div className="w-full h-16 bg-white fixed z-20 px-24 pl-48 pr-24">
       <div className="h-full hidden lg:flex justify-between gap-2">
         <LogoTab />
         <div className="w-4/5 h-full  flex justify-end ">

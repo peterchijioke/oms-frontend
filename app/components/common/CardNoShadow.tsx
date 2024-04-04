@@ -29,15 +29,8 @@ export default function CardNoShadow({ title, caption, img }: Props) {
         )}
         {!img && (
           <>
-            <label
-              style={{ fontFamily: "Jost" }}
-              className="font-bold uppercase text-black"
-            >
-              {title}
-            </label>
-            <p style={{ fontFamily: "Jost" }} className="text-lg text-black">
-              {caption}
-            </p>
+            <label className="font-bold uppercase font-[jost] ">{title}</label>
+            <p className={`font-[jost] font-normal`}>{caption}</p>
           </>
         )}
       </div>
