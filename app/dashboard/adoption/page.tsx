@@ -9,7 +9,6 @@ import AppModal from "@/app/components/common/AppModal";
 type Props = {};
 
 export default function page({}: Props) {
-  const [modal, setModal] = useState(false);
   return (
     <Wrapper>
       <div

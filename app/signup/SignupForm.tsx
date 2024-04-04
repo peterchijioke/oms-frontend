@@ -5,7 +5,7 @@ import { constants } from "../constant";
 
 type Props = {};
 
-export default ({}: Props) => {
+const SignupForm = ({}: Props) => {
   return (
     <form
       onSubmit={(e) => {
@@ -24,3 +24,5 @@ export default ({}: Props) => {
     </form>
   );
 };
+
+export default SignupForm;

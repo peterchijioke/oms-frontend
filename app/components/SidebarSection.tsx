@@ -52,6 +52,7 @@ export default function SidebarSection({}: Props) {
           const { icon: Icon, name, id } = data;
           return (
             <div
+              key={data.id}
               onMouseLeave={() => {
                 setActiveId(undefined);
               }}

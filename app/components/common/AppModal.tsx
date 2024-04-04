@@ -8,7 +8,7 @@ interface ModalProps {
   children: any;
 }
 
-export default ({
+const AppModal = ({
   component,
   isOpen = false,
   onClose,
@@ -59,3 +59,5 @@ export default ({
     </>
   );
 };
+
+export default AppModal;

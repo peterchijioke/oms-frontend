@@ -18,7 +18,7 @@ const op = [
     value: "Adopted",
   },
 ];
-export default () => {
+const AppTable = () => {
   const [modal, setModal] = useState(false);
   return (
     <ListAnimation index={0}>
@@ -108,3 +108,5 @@ const data = [
     state: "View Details",
   },
 ];
+
+export default AppTable;

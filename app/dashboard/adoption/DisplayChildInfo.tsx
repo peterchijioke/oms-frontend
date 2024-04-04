@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 type Props = {};
 
-export default ({}: Props) => {
+const DisplayChildInfo = ({}: Props) => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const handleImageChange = (event: any) => {
@@ -55,3 +55,5 @@ export default ({}: Props) => {
     </div>
   );
 };
+
+export default DisplayChildInfo;

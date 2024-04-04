@@ -58,10 +58,11 @@ export const data = {
   ],
 };
 
-export default () => {
+const ChartComponent = () => {
   return (
     <div className="h-[26rem] w-full bg-white rounded-[5px] px-[20px] py-[20px]">
       <Line options={options} data={data} />
     </div>
   );
 };
+export default ChartComponent;

@@ -8,7 +8,7 @@ import validator from "validator";
 
 type Props = {};
 
-export default ({}: Props) => {
+const LoginForm = ({}: Props) => {
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const navigate: any = useRouter();
@@ -56,3 +56,5 @@ export default ({}: Props) => {
     </form>
   );
 };
+
+export default LoginForm;

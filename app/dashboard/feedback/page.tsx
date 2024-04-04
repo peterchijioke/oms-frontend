@@ -1,4 +1,3 @@
-"use client";
 import React, { useState } from "react";
 import Wrapper from "../Wrapper";
 import { constants } from "@/app/constant";
@@ -9,7 +8,6 @@ import AppModal from "@/app/components/common/AppModal";
 type Props = {};
 
 export default function page({}: Props) {
-  const [modal, setModal] = useState(false);
   return (
     <Wrapper>
       <div

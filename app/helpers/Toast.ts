@@ -1,6 +1,6 @@
 
 import { Bounce, toast } from "react-toastify";
-export default (message:string)=>{
+const Toast =  (message:string)=>{
   return toast(message, {
 position: 'bottom-right',
 autoClose: 5000,
@@ -13,3 +13,4 @@ theme: 'dark',
 transition: Bounce,
 });
 }
+export default Toast

@@ -5,7 +5,7 @@ interface Option {
   label?: string;
 }
 
-export default ({ options, label, onChange }: Props) => {
+const AppDropDown = ({ options, label, onChange }: Props) => {
   const [selectedValue, setSelectedValue] = useState<string>(options[0].value);
 
   const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
@@ -43,3 +43,5 @@ type Props = {
   label?: string;
   onChange?: (value: string) => void;
 };
+
+export default AppDropDown;

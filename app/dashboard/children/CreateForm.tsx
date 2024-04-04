@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 type Props = {};
 
-export default ({}: Props) => {
+const CreateForm = ({}: Props) => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const handleImageChange = (event: any) => {
@@ -58,3 +58,5 @@ export default ({}: Props) => {
     </form>
   );
 };
+
+export default CreateForm;

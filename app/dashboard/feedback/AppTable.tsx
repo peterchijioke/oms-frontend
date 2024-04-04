@@ -3,9 +3,9 @@ import AppModal from "@/app/components/common/AppModal";
 import { ListAnimation } from "@/app/components/common/FramerMotion";
 import { constants } from "@/app/constant";
 import React, { useState } from "react";
-import Feedbacknfo from "./Feedbacknfo";
+import FeedbackInfo from "./FeedbackInfo";
 
-export default () => {
+const AppTable = () => {
   const [modal, setModal] = useState(false);
   return (
     <ListAnimation index={0}>
@@ -36,7 +36,7 @@ export default () => {
                 <td className=" py-2 px-4 text-sm">
                   <AppModal
                     isOpen={modal}
-                    children={<Feedbacknfo />}
+                    children={<FeedbackInfo />}
                     onClose={() => setModal(false)}
                     component={
                       <button
@@ -94,3 +94,5 @@ const data = [
     state: "View Details",
   },
 ];
+
+export default AppTable;
