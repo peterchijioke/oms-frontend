@@ -1,3 +1,4 @@
+"use client";
 import { constants } from "@/app/constant";
 import React, { useState, useRef } from "react";
 
