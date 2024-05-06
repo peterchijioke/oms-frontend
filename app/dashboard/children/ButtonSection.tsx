@@ -1,3 +1,4 @@
+"use client";
 import AppModal from "@/app/components/common/AppModal";
 import React, { useState } from "react";
 import CreateForm from "./CreateForm";
