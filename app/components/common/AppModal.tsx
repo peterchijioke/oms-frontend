@@ -6,15 +6,10 @@ interface ModalProps {
   isOpen?: boolean;
   onClose?: () => void;
   component: any;
-  children: any;
+  form: any;
 }
 
-const AppModal = ({
-  component,
-  isOpen = false,
-  onClose,
-  children,
-}: ModalProps) => {
+const AppModal = ({ component, isOpen = false, onClose, form }: ModalProps) => {
   const [showModal, setShowModal] = useState(isOpen);
   const modalRef = useRef<HTMLDivElement>(null);
 
@@ -53,7 +48,7 @@ const AppModal = ({
             >
               Close
             </button>
-            <div className="p-6 mt-8 h-fit">{children}</div>
+            <div className="p-6 mt-8 h-fit">{form}</div>
           </div>
         </div>
       )}

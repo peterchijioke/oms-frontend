@@ -2,9 +2,7 @@
 import { constants } from "@/app/constant";
 import React, { useState } from "react";
 
-type Props = {};
-
-const DisplayChildInfo = ({}: Props) => {
+const DisplayChildInfo = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const handleImageChange = (event: any) => {

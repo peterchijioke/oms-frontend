@@ -23,9 +23,9 @@ export default function Card({}: Props) {
           style={{ fontFamily: "Jost" }}
           className="text-lg font-medium text-black p-3"
         >
-          "Tailwind CSS is the only framework that I've seen scale on large
-          teams. It's easy to customize, adapts to any design, and the build
-          size is tiny."
+          Tailwind CSS is the only framework that I&apos;ve seen scale on large
+          teams. It&apos;s easy to customize, adapts to any design, and the
+          build size is tiny.
         </p>
       </div>
     </FramerMotion>

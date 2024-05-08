@@ -36,7 +36,7 @@ const AppTable = () => {
                 <td className=" py-2 px-4 text-sm">
                   <AppModal
                     isOpen={modal}
-                    children={<DisplayChildInfo />}
+                    form={<DisplayChildInfo />}
                     onClose={() => setModal(false)}
                     component={
                       <button

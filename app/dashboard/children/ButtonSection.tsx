@@ -1,3 +1,4 @@
+// ButtonSection.tsx
 "use client";
 import AppModal from "@/app/components/common/AppModal";
 import React, { useState } from "react";
@@ -7,14 +8,13 @@ import { Fa6SolidChildren } from "@/app/icons/Fa6SolidChildren";
 
 type Props = {};
 
-export default function ButtonSection({}: Props) {
+export default function ButtonSection() {
   const [modal, setModal] = useState(false);
 
   return (
     <div className="w-full flex justify-end">
       <AppModal
         isOpen={modal}
-        children={<CreateForm />}
         onClose={() => setModal(false)}
         component={
           <button
@@ -25,6 +25,7 @@ export default function ButtonSection({}: Props) {
             Add Child
           </button>
         }
+        form={<CreateForm />}
       />
     </div>
   );

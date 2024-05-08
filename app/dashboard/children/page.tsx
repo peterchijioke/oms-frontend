@@ -7,9 +7,7 @@ import AppModal from "@/app/components/common/AppModal";
 import CreateForm from "./CreateForm";
 import ButtonSection from "./ButtonSection";
 
-type Props = {};
-
-export default function page({}: Props) {
+export default function page() {
   return (
     <Wrapper>
       <div
