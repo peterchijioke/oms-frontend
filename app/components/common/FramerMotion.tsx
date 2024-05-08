@@ -69,3 +69,5 @@ export const TableRowAnimation = ({
     </motion.tr>
   );
 };
+
+export default Animate;
