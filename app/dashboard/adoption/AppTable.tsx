@@ -9,19 +9,20 @@ const AppTable = () => {
   const [modal, setModal] = useState(false);
   return (
     <ListAnimation index={0}>
-      <h1 className="text-2xl  font-bold mb-4 text-white">Children</h1>
-      <div className="w-full  overflow-hidden">
+      <h1 className="text-2xl font-bold mb-4 text-white">Children</h1>
+      <div className="w-full overflow-hidden">
         <table className="w-full border-collapse">
           <thead>
             <tr
               className={`text-white border-b-2 bg-[${constants.colors.primary}] text-left h-[4rem]`}
             >
-              <th className=" py-2 px-4">Child's Name</th>
-              <th className=" py-2 px-4">Reference</th>
-              <th className=" py-2 px-4">Action</th>
+              <th className="py-2 px-4">Child&apos;s Name</th>
+              <th className="py-2 px-4">Reference</th>
+              <th className="py-2 px-4">Action</th>
             </tr>
           </thead>
           <tbody>
+            DisplayChildInfo
             {data.map((row, index) => (
               <tr
                 key={index}
@@ -31,9 +32,9 @@ const AppTable = () => {
                   constants.colors.primary
                 }] hover:text-white h-[60px]`}
               >
-                <td className=" py-2 px-4 text-sm">{row.name}</td>
-                <td className=" py-2 px-4 text-sm">{row.ref}</td>
-                <td className=" py-2 px-4 text-sm">
+                <td className="py-2 px-4 text-sm">{row.name}</td>
+                <td className="py-2 px-4 text-sm">{row.ref}</td>
+                <td className="py-2 px-4 text-sm">
                   <AppModal
                     isOpen={modal}
                     form={<DisplayChildInfo />}
@@ -41,7 +42,7 @@ const AppTable = () => {
                     component={
                       <button
                         onClick={() => setModal(true)}
-                        className={`p-2 rounded-[20px]  border-white border-[2px] text-white bg-[${constants.colors.primary}]`}
+                        className={`p-2 rounded-[20px] border-white border-[2px] text-white bg-[${constants.colors.primary}]`}
                       >
                         {row.state}
                       </button>

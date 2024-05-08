@@ -24,7 +24,7 @@ const DisplayChildInfo = ({}: Props) => {
         className={`text-slate-700 text-xl font-bold font-[jost] uppercase`}
         htmlFor="created child"
       >
-        Child's Details
+        Child&apos;s Details
       </label>
       <div
         className={`h-32 w-32 bg-slate-500 rounded-[5px] flex items-center justify-center`}
