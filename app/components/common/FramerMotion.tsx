@@ -6,7 +6,7 @@ const variants = {
   enter: { opacity: 1, x: 0, y: 0 },
 };
 
-export const Animate = ({ children }: { children: React.ReactNode }) => {
+const Animate = ({ children }: { children: React.ReactNode }) => {
   return (
     <motion.main
       variants={variants}
