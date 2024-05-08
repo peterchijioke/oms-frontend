@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import AppModal from "@/app/components/common/AppModal";
 import { ListAnimation } from "@/app/components/common/FramerMotion";
